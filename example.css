@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9E8E8;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main{
+    padding:1.5em .5em 1.5em 3em;
+}
+
+
+
+div{
+    width:300px;
+    height:180px;
+    font-size: 1em;
+    color:white;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.1);
+    transition: transform 200ms ease-in-out;
+    
+}
+
+div:hover{
+    transform: scale(1.1);
+}
+
+p{
+    color:#5B5B5B;
+    background-color: white;
+    width:100%;
+    padding:.5em;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 0 0 10px 10px;
+}
+
+.title_content h1{
+    font-size: 4.5em;
+    font-family: 'Bebas Neue', cursive;
+    color: #141E57;
+}
+
+.title_content h3{
+    font-size: 1.5em;
+    color:#757575;
+    margin-top: .5em;;
+}
+
+section.color_palette{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:2em;
+    margin-top:2em;
+}
+
+
+.generate_button{
+    color: #5B5B5B;
+    background-color: #C4BFBF ;
+    border:none;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight:bold;
+    margin-top: 1em;
+    outline:none;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    transition: color 200ms ease-in-out,background-color 200ms ease-in-out,transform 200ms ease-in-out;
+
+}
+
+.generate_button:hover,.feature_buttons > button:hover{
+   background-color:#5B5B5B ;
+   color:#C4BFBF;
+   transform: scale(1.1);
+}
+
+.feature_buttons{
+    display: flex;
+    justify-content: center;
+    gap:2em;
+    margin-top:2em;
+}
+
+.feature_buttons > button {
+    background-color: #C4BFBF;
+    border:none;
+    color:#5B5B5B;
+    font-size: 2em;
+    border-radius: 50%;
+    outline: none;
+    padding:.5em;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    transition: color 200ms ease-in-out,background-color 200ms ease-in-out,transform 200ms ease-in-out;
+}
+
+@media only screen and (max-width:690px){
+    body{
+        text-align: center;
+    }
+
+    main{
+        padding:1em;
+    }
+
+    .title_content h1{
+        font-size: 3.5em;
+    }
+
+    div{
+        width:90%;
+    }
+    
+
+
+    section.color_palette{
+        justify-content: center;
+    }
+}
+
+
