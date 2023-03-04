@@ -75,23 +75,14 @@ let paletteRemover = () => {
 }
 
 let eventActions = (event) => {
-    switch (event.key) {
-        case "Enter":
-            ColorPaletteGenerator()
-            break
-        case "+":
-            paletteAdder()
-            break
-        case "-":
-            paletteRemover()
-            break
-        default:
-            break
-
+    if (event.key == 'Enter'){
+        ColorPaletteGenerator()
+    } else if (event.key == '+'){
+        paletteAdder()
+    }else if (event.key == '-'){
+        paletteRemover()
     }
-
 }
-
 
 ColorPaletteGenerator()
 copyContent()
